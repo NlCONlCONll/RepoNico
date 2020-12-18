@@ -49,9 +49,36 @@ namespace _14__Praktikum
                 Array.Sort(goUrut);
                 
                 string urut = "";
-                for(int j = 0; j < goUrut.Length; j++)
+
+                string final = "";
+                string lowerCase = "";
+                string upperCase = "";
+                string number = "";
+                string mark = "";
+                for (int j = 0; j < goUrut.Length; j++)
                 {
                     urut = urut + goUrut[j];
+
+
+
+
+                    //if (char.IsUpper(goUrut[j]))
+                    //{
+                    //    lowerCase = lowerCase + Convert.ToString(goUrut[j]);
+                    //}
+                    //if (char.IsLower(goUrut[j]))
+                    //{
+                    //    upperCase = upperCase + Convert.ToString(goUrut[j]);
+                    //}
+                    //if(char.IsNumber(goUrut[j]))
+                    //{
+                    //    number = number + Convert.ToString(goUrut[j]);
+                    //}
+                    //else
+                    //{
+                    //    mark = mark + Convert.ToString(goUrut[j]);
+                    //}
+                    //final = final + lowerCase + upperCase + number + mark;
                 }
                 labelOutput.Text = urut;
             }
